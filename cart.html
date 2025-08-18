@@ -2,10 +2,31 @@
 <html lang="en">
     <head></head>
     <body>
-        <button>Show Quantity</button>
-        <button>Add to Cart</button>
-        <button>+2</button>
-        <button>+3</button>
-        <button>Reset Cart</button>
+        <!-- Show Quantity -->
+        <h1>Cart Quantity</h1>
+        <button onclick="console.log(`Cart Quantity : ${cartQuantity}`)">Show Quantity</button>
+
+        <!-- Add to Cart -->
+        <button onclick=" 
+        cartQuantity = cartQuantity + 1 ; 
+        console.log(`Cart Quantity : ${cartQuantity}`)">Add to Cart</button>
+
+        <!-- Add by 2 quantity -->
+        <button onclick="
+        cartQuantity = cartQuantity + 2;
+        console.log(`Cart Quantity : ${cartQuantity}`)">+2</button>
+
+        <!-- Add by 3 quantity -->
+        <button onclick="
+        cartQuantity = cartQuantity + 3 ;
+        console.log(`Cart Quantity : ${cartQuantity}`)">+3</button>
+
+        <!-- Reset Cart -->
+        <button onclick="
+        cartQuantity = cartQuantity - cartQuantity;
+        console.log(`Cart Quantity : ${cartQuantity}`)">Reset Cart</button>
     </body>
+    <script>
+        let cartQuantity = 0;
+    </script>
 </html>
