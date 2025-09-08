@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Rock Paper & scisssor </title>
+        <!-- <header>Rock Paper & sessor </header> -->
     </head>
     <body>
+        <h1>Simple Rock, Paper & scisssor </h1>
+
+        <!-- Rock -->
+        <button onclick=" 
+        
+        if(randomNumber >= 0 && randomNumber < 1/3){
+            console.log('Rock');
+        }else if(randomNumber >= 1/3 && randomNumber < 2/3){
+            console.log('Paper');
+        }else if(randomNumber >= 2/3 && randomNumber < 1){
+            console.log('Scisssor');
+        }
+        ">Rock</button>
+
+        <!-- Paper -->
+        <button onclick="
+        if(randomNumber >= 0 && randomNumber < 1/3){
+            console.log('Rock');
+        }else if(randomNumber >= 1/3 && randomNumber < 2/3){
+            console.log('Paper');
+        }else if(randomNumber >= 2/3 && randomNumber < 1){
+            console.log('Scisssor')
+        }
+        ">Paper</button>
+
+        <!-- Scisssor -->
+        <button onclick="
+        if(randomNumber >= 0 && randomNumber < 1/3){
+            console.log('Rock');
+        }else if(randomNumber >= 1/3 && randomNumber < 2/3){
+            console.log('Paper');
+        }else if(randomNumber >= 2/3 && randomNumber < 1){
+            console.log('Scisssor')
+        }
+        ">Scisssor</button>
+
     </body>
     <script>
-    
-    let age = 18;
-    if(age >= 18){
-        console.log("You can drive");
-    }else{
-        console.log("You cant drive")
-    }
+    randomNumber = Math.random();
     </script>
 </html>
