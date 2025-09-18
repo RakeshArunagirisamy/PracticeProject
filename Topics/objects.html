@@ -1,0 +1,30 @@
+<script>
+//Objects
+    /*
+    1. Starts with {} brackets
+    2. You can add as many as property "here name , price is the property"
+    */
+    const product = {
+        name :          'PlayStation5' ,
+        //property      //value
+        price : 34000 ,
+        releasedYear : 2020
+    }
+    console.log(product);
+
+    //to access value of a property
+    console.log(product.name);
+    console.log(product.price);
+
+    //to change a value 
+    product.releasedYear = 2021;
+    console.log(product);
+
+    //to add new property 
+    product.company = 'Sony';
+    console.log(product);
+
+    //to delete a property
+    delete product.releasedYear
+    console.log(product);
+    </script>
