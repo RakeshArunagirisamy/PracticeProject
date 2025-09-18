@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h1>Calculator</h1>
+    </head>
+    <body>
+        <div>
+            <input type="number" id="num1" placeholder="Enter number" required>
+            <input type="number" id="num2" placeholder="Enter number" required>
+            <br><br>
+            <button onclick="addition()">+</button>
+            <button onclick="subtraction()">-</button>
+            <button onclick="division()">/</button>
+            <button onclick="multiplication()">*</button>
+            <br>
+            <h2>Result : <span id="result"></span></h2>          <!-- new method -->
+        </div>
+        
+    </body>
+    <script>
+        function addition(){
+            let n1 = parseFloat(document.getElementById("num1").value);               //new method
+            let n2 = parseFloat(document.getElementById("num2").value);               //new method
+            document.getElementById("result").innerText = n1+n2;                      //new method
+        }
+
+        function subtraction(){
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").innerText = n1 - n2;
+        }
+
+        function multiplication(){
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").innerText = n1 * n2;
+        }
+
+        function division(){
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            document.getElementById("result").innerText = n1 / n2;
+        }
+    </script>
+</html>
