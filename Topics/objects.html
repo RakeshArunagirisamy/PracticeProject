@@ -3,6 +3,7 @@
     /*
     1. Starts with {} brackets
     2. You can add as many as property "here name , price is the property"
+    3. Inside object we can add any type of value
     */
     const product = {
         name :          'PlayStation5' ,
@@ -27,4 +28,25 @@
     //to delete a property
     delete product.releasedYear
     console.log(product);
+
+    //other ways to access value 
+    console.log(product['name']);
+    //it is when a value cant be accessed by .dot method in line 15
+
+    //Line 6
+
+    const product2 = {
+        name : 'xbox',
+        price : 30000,
+        releasedYear : 2020,
+        rating : {             //Nested Object
+            star : 4 ,
+            count : 9800 
+        }
+    }
+
+    console.log(product2.name);
+    console.log(product2.rating.star);
+    console.log(product2.rating['count']);
+
     </script>
