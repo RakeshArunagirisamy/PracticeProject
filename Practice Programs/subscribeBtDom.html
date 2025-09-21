@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <header>Youtube Subscribe Button</header><br>
+        <title>Subscribe DOM Project</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(208, 212, 216);
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding : 6px;
+            border-radius: 13.8px;
+            border-width: 0px; 
+        }
+    </style>
+    <body>
+        <button onclick="buttonElement()">Subscribe</button>
+    </body>
+    <script>
+        
+
+        
+ 
+        function buttonElement(){
+        const buttonStatus = document.querySelector('button').innerHTML;
+        console.log(buttonStatus);
+
+            if(buttonStatus == 'Subscribe'){
+                document.querySelector('button').innerHTML = 'Subscribed';
+            }else if(buttonStatus == 'Subscribed'){
+                document.querySelector('button').innerHTML = 'Subscribe';
+            }
+            
+        }
+
+        
+
+    </script>
+</html>
