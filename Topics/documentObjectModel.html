@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <button>Hello</button>
+        <button class="button2">Welcome</button>
+    </body>
+    <script>
+        //Document object represents and model the webpage 
+        //by this method we can use html inside script
+        
+        //document.body.innerHTML = 'Hello' ;
+        //this removed everythig in body and add the string
+
+        document.title = 'Document Object Model';
+        //this removes and add the string in title
+
+        //document.body.innerHTML = '<button>Hello</button>'
+        //you can inject any html code into the body by this method
+       
+        document.querySelector('button')
+        console.log(document.querySelector('button'));
+        //you can get any element from the webpage
+
+        document.querySelector('button').innerHTML;
+        console.log(document.querySelector('button').innerHTML);
+        //it helps to get the html of the specific element
+
+        document.querySelector('button').innerHTML = 'Hi Everyone' ;
+        //it changes the value or html of the specific element 
+
+        //QuerySelector always takes the first button inorder to take the next button we need to use class this applies for all
+
+        document.querySelector('.button2');
+        console.log(document.querySelector('.button2'));
+        //inorder to run this line u have to comment line 14 and 20
+
+        //Since we are in script tag we can now assige html to an object
+        const buttonElement = document.querySelector('.button2');
+        //use Element during naming
+        console.log(buttonElement);
+        //DOM combines HTML and JS 
+
+    </script>
+</html>
