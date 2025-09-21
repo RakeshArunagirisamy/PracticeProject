@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <script>
 //Objects
     /*
@@ -61,5 +63,100 @@
     }
 
     product3.fun();
+
     
+    //strings also have property and method it is called auto boxing
+    // null and undifined only dont have auto boxing
+
+    console.log('Rakesh'.length);
+    console.log('Rakesh'.toUpperCase());
+
+    //Object and references
+
+    console.log(product3.name = 'Gaming PC');
+    console.log(product3);
+
+
+
+    //we cant compare object directly
+
+    const player1 = {
+
+        name : 'rakesh' ,
+
+    }
+    
+    const player2 = {
+
+        name1 : 'rakesh' ,
+        age : 23 
+    }
+
+    console.log(player1 == player2);
+    //it shows false as a result coz it always compare the reference here player1 and player2 are the reference.
+
+    const player3 = player1 ;
+
+    console.log(player1 == player3);
+    //it shows true coz reference are same 
+
+    console.log(player1.name == player2.name1);
+    //this is how we compare the values 
+    
+
+
+    //Destructuring
+    //const name = player1.name ;
+            //variable      //property
+    //if the class varialbe and the property are same we can write like this
+    const { name } = player1;
+    console.log(name);
+    //const name1 = player2.name ;
+    //const age = player2.age ;
+    const{ name1 , age } = player2;
+    console.log(name1);
+    console.log(age);
+
+
+    //Short hand property
+
+    const player4 = {
+        name2 : name ,
+    }
+
+    //here the value will be the value used before and it will be substuted.
+    console.log(player4);
+
+    const psGames = {
+        gameName : 'God Of War' ,
+    }
+    console.log(psGames.gameName);
+    //const gameName = psGames.gameName;
+    /*or*/
+    const { gameName } = psGames;  //this is important 
+    
+    const pcGames = {
+        gameName : gameName ,
+    }
+    console.log(pcGames);
+
+    //if property and value reference are same we can write like this
+    const xboxGames = {
+        gameName
+    }
+    console.log(xboxGames);
+
+    //shorthand method
+    //type method insterd of declaring properties 
+
+    const nitendoGames = {
+        
+        gamesToPlay () {
+            console.log('Mario' , 'pokimon');
+        }
+    }
+
+    console.log(nitendoGames.gamesToPlay())
+
     </script>
+</html>
