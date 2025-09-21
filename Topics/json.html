@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--JSON is a Build in object 
+    It does not support single quots & function
+    it is easy for data transfer and usiversaly implementable code-->
+    
+    <script>
+
+        const employeeId = {
+            name : 'Rakesh A' ,
+            position : 'Process Associate' ,
+            DOJ : 10/24 ,
+            location : 'Chennai' ,
+            company : 'HCL Technology' ,
+        }
+
+        //to convert js to json
+        console.log(JSON.stringify(employeeId));
+
+        //to convert json to js
+        const jsonEmpId = JSON.stringify(employeeId);
+        console.log(JSON.parse(jsonEmpId));
+
+
+
+    </script>
+</html>
