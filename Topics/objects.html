@@ -49,4 +49,17 @@
     console.log(product2.rating.star);
     console.log(product2.rating['count']);
 
+    //functions are also a type of values in Js
+
+    const product3 = {
+        name : 'PC' ,
+        price : 100000 ,
+        grapicsCardPrice : 50000 ,
+        fun : function totalPrice(){
+           console.log(this.price+this.grapicsCardPrice);
+        }
+    }
+
+    product3.fun();
+    
     </script>
